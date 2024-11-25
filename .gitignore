@@ -21,6 +21,9 @@ build
 .svn/
 .png
 .jpg
-Test Cases/TestXML
-Test Cases/SkusobnyTC
+Test Cases/TestXML.tc
+Test Cases/SkusobnyTC.tc
 Test Cases/To-Do
+Scripts/To-Do
+Scripts/TestXML
+Scripts/SkusobnyTC
