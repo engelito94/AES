@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CV-13 Podanie CV pred predložením tovaru (CV typu D) a vypršanie lehoty na predloženie tovaru (SK511) - nastavit casovac</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>5c86543e-d7db-43ea-afd8-e3f6990062f7</testCaseGuid>
-</TestCaseEntity>
