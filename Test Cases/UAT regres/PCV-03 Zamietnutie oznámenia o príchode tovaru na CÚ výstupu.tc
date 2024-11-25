@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PCV-03 Zamietnutie oznámenia o príchode tovaru na CÚ výstupu</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>83bbf97e-9a57-40a3-91f1-8aeb48914b3d</testCaseGuid>
+</TestCaseEntity>

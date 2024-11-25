@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>priecinok s ulozenymi XML-kami</description>
+      <initValue>'C:/Users/barcik/Desktop/CEP XML/AES/Ditec xml/'</initValue>
+      <name>cestaSubor</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>CIS klient</description>
+      <initValue>'C:\\\\Users\\\\barcik\\\\AppData\\\\Roaming\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\CIS klient(DTC_TEST).lnk'</initValue>
+      <name>cestaCIS</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>CEP</description>
+      <initValue>'C:\\\\Program Files (x86)\\\\Ditec\\\\Ditec.Cep.Ekr.Interface\\\\Cep.Ekr.App.exe'</initValue>
+      <name>cestaCEP</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'barcik'</initValue>
+      <name>menoCIS</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'MswRUieWN0roLhNOfsIdHQ=='</initValue>
+      <name>hesloCIS</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'barcikLP'</initValue>
+      <name>menoCEP</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'FEsOd8O35eSoR2c+MauzCg=='</initValue>
+      <name>hesloCEP</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

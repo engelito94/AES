@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PCV-04 Príchod tovaru na CÚ Výstupu evidovaný colníkom</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>63f4b0ce-2f66-484c-b70f-85eaceec8993</testCaseGuid>
+</TestCaseEntity>

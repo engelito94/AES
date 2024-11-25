@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-03 Zrušenie zjednodušeného CV deklarantom po prepustení (typ B)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e709569d-f916-4530-8554-85a09871788e</testCaseGuid>
+</TestCaseEntity>

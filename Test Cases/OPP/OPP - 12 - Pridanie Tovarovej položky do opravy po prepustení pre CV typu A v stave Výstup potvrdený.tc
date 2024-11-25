@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OPP - 12 - Pridanie Tovarovej položky do opravy po prepustení pre CV typu A v stave Výstup potvrdený</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3417decd-3cf2-40d7-a12b-95c9a30764a5</testCaseGuid>
+</TestCaseEntity>

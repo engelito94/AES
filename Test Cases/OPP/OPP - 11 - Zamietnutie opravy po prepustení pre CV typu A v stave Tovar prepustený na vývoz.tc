@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OPP - 11 - Zamietnutie opravy po prepustení pre CV typu A v stave Tovar prepustený na vývoz</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>bdb786c4-816a-4f82-8858-ae0cbd6bb0ee</testCaseGuid>
+</TestCaseEntity>

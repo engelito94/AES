@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WindowsElementEntity>
+   <description></description>
+   <name>ToolBar_PotvrdenieVysledkuKontrol</name>
+   <tag></tag>
+   <locator>//Custom/ToolBar[1]/Button[6]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
+</WindowsElementEntity>

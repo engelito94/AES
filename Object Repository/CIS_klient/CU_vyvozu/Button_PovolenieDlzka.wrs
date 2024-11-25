@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WindowsElementEntity>
+   <description></description>
+   <name>Button_PovolenieDlzka</name>
+   <tag></tag>
+   <locator>//Custom/Group[1]/Group[3]/Pane[2]/Edit[1]/Edit[1]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
+</WindowsElementEntity>

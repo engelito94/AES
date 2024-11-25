@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-01 Vývoz - Základný scenár</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ee7e1b96-bbe6-4e2f-99f6-ec3d6282ffb2</testCaseGuid>
+</TestCaseEntity>

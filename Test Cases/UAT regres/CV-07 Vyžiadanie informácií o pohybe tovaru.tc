@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-07 Vyžiadanie informácií o pohybe tovaru</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>90831b35-4b1e-4493-a476-6f03ba80863a</testCaseGuid>
+</TestCaseEntity>

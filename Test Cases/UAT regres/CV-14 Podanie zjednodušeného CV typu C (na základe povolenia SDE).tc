@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-14 Podanie zjednodušeného CV typu C (na základe povolenia SDE)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>041f1576-054b-4f22-b889-a3bf02e4091f</testCaseGuid>
+</TestCaseEntity>

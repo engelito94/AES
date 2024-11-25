@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OPP - 19 - Schválenie opravy po prepustení s kontrolami ERP pre CV typu A v stave Výstup potvrdený</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f68c1b18-f428-41c9-a88e-c861807aa58f</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PCV-05 Výstup po prijatí viacerých manifestov</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e5c3c670-72e1-4f67-8a0b-586d94e80e75</testCaseGuid>
+</TestCaseEntity>

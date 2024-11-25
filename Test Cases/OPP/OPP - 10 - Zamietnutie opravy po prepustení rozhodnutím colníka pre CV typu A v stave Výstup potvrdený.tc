@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OPP - 10 - Zamietnutie opravy po prepustení rozhodnutím colníka pre CV typu A v stave Výstup potvrdený</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>4de9fca3-a211-4297-88ef-23e7e0d614d9</testCaseGuid>
+</TestCaseEntity>

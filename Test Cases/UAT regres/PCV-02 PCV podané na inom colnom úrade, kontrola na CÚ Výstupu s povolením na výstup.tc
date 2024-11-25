@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PCV-02 PCV podané na inom colnom úrade, kontrola na CÚ Výstupu s povolením na výstup</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cfe8ea72-3f84-4257-8be7-e02e027a3937</testCaseGuid>
+</TestCaseEntity>

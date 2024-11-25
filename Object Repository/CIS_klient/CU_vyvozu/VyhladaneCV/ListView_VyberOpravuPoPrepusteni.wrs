@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WindowsElementEntity>
+   <description></description>
+   <name>ListView_VyberOpravuPoPrepusteni</name>
+   <tag></tag>
+   <locator>PO OPRAVE PO PREPUSTENÍ</locator>
+   <locatorStrategy>NAME</locatorStrategy>
+</WindowsElementEntity>

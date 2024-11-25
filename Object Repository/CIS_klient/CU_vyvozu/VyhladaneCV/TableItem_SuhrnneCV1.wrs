@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WindowsElementEntity>
+   <description></description>
+   <name>TableItem_SuhrnneCV1</name>
+   <tag></tag>
+   <locator>Row 0, Column 1: Tovar prepustený na vývoz</locator>
+   <locatorStrategy>NAME</locatorStrategy>
+</WindowsElementEntity>

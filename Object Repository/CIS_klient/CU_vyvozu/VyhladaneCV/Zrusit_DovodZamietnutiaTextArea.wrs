@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WindowsElementEntity>
+   <description></description>
+   <name>Zrusit_DovodZamietnutiaTextArea</name>
+   <tag></tag>
+   <locator>//Window/Window[1]/Custom[1]/Group[1]/Group[1]/Pane[5]/Edit[1]/Custom[1]/Edit[1]/Edit[1]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
+</WindowsElementEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PCV-07 Zrušenie PCV deklarantom</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cf6a6267-82ac-44f6-8ba7-ba53994ebc69</testCaseGuid>
+</TestCaseEntity>

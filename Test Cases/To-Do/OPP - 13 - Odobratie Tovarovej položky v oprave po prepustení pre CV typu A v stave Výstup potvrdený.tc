@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OPP - 13 - Odobratie Tovarovej položky v oprave po prepustení pre CV typu A v stave Výstup potvrdený</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1f71e2d4-65c0-4ca5-85d5-5874d74222a3</testCaseGuid>
+</TestCaseEntity>

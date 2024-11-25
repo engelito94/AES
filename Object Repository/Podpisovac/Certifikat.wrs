@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WindowsElementEntity>
+   <description></description>
+   <name>Certifikat</name>
+   <tag></tag>
+   <locator>Vydavateľ Row 2</locator>
+   <locatorStrategy>NAME</locatorStrategy>
+</WindowsElementEntity>

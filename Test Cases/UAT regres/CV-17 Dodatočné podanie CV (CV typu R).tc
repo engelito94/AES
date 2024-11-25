@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-17 Dodatočné podanie CV (CV typu R)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c1df40e0-9c9e-434b-804c-a8cc5f285607</testCaseGuid>
+</TestCaseEntity>

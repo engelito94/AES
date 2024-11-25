@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Y-01-Vytvorenie obdobia pre súhrnné podania typu Y</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>e4e9ff8d-6b0f-4b61-b40c-911ef46cb91c</testCaseGuid>
+</TestCaseEntity>

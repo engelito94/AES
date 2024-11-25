@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WindowsElementEntity>
+   <description></description>
+   <name>Menu_AktualneAER</name>
+   <tag></tag>
+   <locator>//Window/Custom[1]/ToolBar[1]/MenuItem[6]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
+</WindowsElementEntity>

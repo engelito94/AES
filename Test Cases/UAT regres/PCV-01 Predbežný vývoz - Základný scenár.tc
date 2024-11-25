@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>PCV-01 Predbežný vývoz - Základný scenár</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>75c9455c-7b91-4a5a-9875-47dbaff26e49</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WindowsElementEntity>
+   <description></description>
+   <name>Button_KodVysledkuKontroly</name>
+   <tag></tag>
+   <locator>//Custom/Tab[1]/TabItem[1]/Pane[1]/Group[1]/Group[1]/Group[2]/Group[1]/Group[3]/Pane[3]/Edit[1]/Button[1]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
+</WindowsElementEntity>

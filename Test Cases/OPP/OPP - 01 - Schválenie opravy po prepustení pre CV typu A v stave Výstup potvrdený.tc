@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>OPP - 01 - Schválenie opravy po prepustení pre CV typu A v stave &quot;Výstup potvrdený&quot;</description>
+   <name>OPP - 01 - Schválenie opravy po prepustení pre CV typu A v stave Výstup potvrdený</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>250aa0e4-2779-4b9d-947a-63d2ff72f8b4</testCaseGuid>
+</TestCaseEntity>

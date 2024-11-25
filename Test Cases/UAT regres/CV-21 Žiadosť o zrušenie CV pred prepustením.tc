@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-21 Žiadosť o zrušenie CV pred prepustením</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1e931012-f343-4304-8510-0fb75a115fc0</testCaseGuid>
+</TestCaseEntity>

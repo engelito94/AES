@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-20 Vývoz a výstup - CÚ Vývozu je zhodný s CÚ Výstupu</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8fab96d8-c766-4844-9414-f275dc1ae934</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-12 Podanie CV pred predložením tovaru (CV typu D) a žiadosť o zrušenie (SK514) pred podaním oznámenia o predložení tovaru (SK511)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>38218d7f-830d-48d8-aaa6-2af0a5c331d1</testCaseGuid>
+</TestCaseEntity>

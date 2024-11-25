@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-24 CCK - CÚ Dohľadu navrhuje kontrolu (kontrola bez nálezu)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>dffd04c0-140b-4955-b7b2-2fd44c55ba83</testCaseGuid>
+</TestCaseEntity>

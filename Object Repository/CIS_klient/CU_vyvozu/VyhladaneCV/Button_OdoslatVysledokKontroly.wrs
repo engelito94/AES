@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WindowsElementEntity>
+   <description></description>
+   <name>Button_OdoslatVysledokKontroly</name>
+   <tag></tag>
+   <locator>//Custom/Group[1]/Group[1]/Group[1]/Pane[4]/Group[1]/Group[2]/Pane[1]/Button[1]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
+</WindowsElementEntity>

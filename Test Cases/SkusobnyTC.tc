@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SkusobnyTC</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2699efe1-938a-4f00-8fdf-fa237d666720</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>551545bf-9868-4cca-b82b-f326f2c7e77e</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>551545bf-9868-4cca-b82b-f326f2c7e77e</id>
+      <masked>false</masked>
+      <name>LRN</name>
+   </variable>
+</TestCaseEntity>

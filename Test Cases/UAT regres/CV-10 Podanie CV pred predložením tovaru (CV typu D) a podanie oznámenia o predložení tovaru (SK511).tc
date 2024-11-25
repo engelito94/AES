@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-10 Podanie CV pred predložením tovaru (CV typu D) a podanie oznámenia o predložení tovaru (SK511)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5aea790b-3555-4bfe-be94-d37d8b7c51a6</testCaseGuid>
+</TestCaseEntity>

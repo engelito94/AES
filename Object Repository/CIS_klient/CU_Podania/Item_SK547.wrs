@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WindowsElementEntity>
+   <description></description>
+   <name>Item_SK547</name>
+   <tag></tag>
+   <locator>Row 4, Column 1: SK548EXS - Schválenie/zamietnutie manifestu</locator>
+   <locatorStrategy>NAME</locatorStrategy>
+   <properties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Name</name>
+      <type>Main</type>
+      <value>Row 4, Column 1: SK590EXS - Oznámenie o výstupe tovaru z územia EÚ</value>
+      <webElementGuid>436ae755-dd87-4a2b-a49d-2b19eec85f50</webElementGuid>
+   </properties>
+   <properties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>XPATH</name>
+      <type>Main</type>
+      <value>//Window/Tab[1]/TabItem[3]/Custom[1]/Tab[1]/TabItem[8]/Custom[1]/Custom[1]/Group[1]/DataGrid[1]/Pane[1]/DataItem[5]</value>
+      <webElementGuid>81e95654-ef8e-45e4-83d9-edb14cb833a2</webElementGuid>
+   </properties>
+</WindowsElementEntity>

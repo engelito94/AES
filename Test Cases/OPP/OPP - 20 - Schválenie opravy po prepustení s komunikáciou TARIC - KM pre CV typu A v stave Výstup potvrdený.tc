@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OPP - 20 - Schválenie opravy po prepustení s komunikáciou TARIC - KM pre CV typu A v stave Výstup potvrdený</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>f700d988-d49c-484e-80e1-ae000712e5e7</testCaseGuid>
+</TestCaseEntity>

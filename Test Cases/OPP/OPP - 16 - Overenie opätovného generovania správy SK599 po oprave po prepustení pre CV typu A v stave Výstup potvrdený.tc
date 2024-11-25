@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OPP - 16 - Overenie opätovného generovania správy SK599 po oprave po prepustení pre CV typu A v stave Výstup potvrdený</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>85684453-43eb-47b3-a79e-39b12e38541e</testCaseGuid>
+</TestCaseEntity>

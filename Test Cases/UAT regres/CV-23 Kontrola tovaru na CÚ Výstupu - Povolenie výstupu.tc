@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-23 Kontrola tovaru na CÚ Výstupu - Povolenie výstupu</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>001376c7-4938-43c5-8466-c2e3e0331dee</testCaseGuid>
+</TestCaseEntity>

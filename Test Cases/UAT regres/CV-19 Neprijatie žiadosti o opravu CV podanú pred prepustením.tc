@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-19 Neprijatie žiadosti o opravu CV podanú pred prepustením</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>14a4b6aa-d103-4e32-88f9-5394cd808193</testCaseGuid>
+</TestCaseEntity>

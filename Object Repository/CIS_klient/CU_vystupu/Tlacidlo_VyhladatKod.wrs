@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WindowsElementEntity>
+   <description></description>
+   <name>Tlacidlo_VyhladatKod</name>
+   <tag></tag>
+   <locator>//Window/Window[1]/Custom[1]/Custom[1]/Group[1]/Button[1]</locator>
+   <locatorStrategy>XPATH</locatorStrategy>
+</WindowsElementEntity>

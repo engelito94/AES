@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-18 Podanie CV so žiadosťou o jednorazové povolenie na pasívny zušlachťovací styk (OPO)</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>60b2b64a-59e1-4d79-bf1b-bcd3323a0c52</testCaseGuid>
+</TestCaseEntity>
