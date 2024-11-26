@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CV-22 Kontrola tovaru na CU Vývozu - Prepustenie tovaru KROK 23</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>9af38f18-bbdf-457d-b696-ba06137419f0</testCaseGuid>
-</TestCaseEntity>

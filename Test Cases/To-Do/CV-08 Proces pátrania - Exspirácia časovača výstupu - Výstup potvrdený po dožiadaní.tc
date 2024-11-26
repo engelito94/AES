@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CV-08 Proces pátrania - Exspirácia časovača výstupu - Výstup potvrdený po dožiadaní</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>7d41059f-8d7d-4c95-879c-0c83caf4084d</testCaseGuid>
-</TestCaseEntity>

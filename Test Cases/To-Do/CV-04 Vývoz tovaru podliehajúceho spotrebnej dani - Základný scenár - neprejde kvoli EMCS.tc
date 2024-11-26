@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>CV-04 Vývoz tovaru podliehajúceho spotrebnej dani - Základný scenár - neprejde kvoli EMCS</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>5e7e8e5a-31ad-4902-bcc4-e7faf46359f4</testCaseGuid>
-</TestCaseEntity>
