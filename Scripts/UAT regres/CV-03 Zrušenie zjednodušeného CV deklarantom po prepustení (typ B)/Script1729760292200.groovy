@@ -93,7 +93,7 @@ Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/Vyhladan
 
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_PrijatCV03 - Copy (1)'))
 
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_PotvrditZrusenie') //stlacenie prijat buttonu
+Windows.doubleClick(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_PotvrditZrusenie') //stlacenie prijat buttonu
     )
 
 'Podpis SK528'

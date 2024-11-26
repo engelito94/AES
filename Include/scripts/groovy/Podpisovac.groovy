@@ -43,5 +43,6 @@ public class Podpisovac {
 		if (Windows.verifyElementPresent(findWindowsObject('Podpisovac/ButtonOK'), 10, OPTIONAL)) {
 			Windows.click(findWindowsObject('Podpisovac/ButtonOK'))
 		}
+		
 	}
 }

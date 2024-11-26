@@ -130,6 +130,11 @@ if (stavAER.equals("Vytvorené")) {
 
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/ZatvoritBezUlozenia'))
 
+'Zavretie CIS'
+Windows.closeApplication()
+
+Windows.click(findWindowsObject('Object Repository/CIS_klient/ZavrietAplikaciu'))
+
 'Prepnutie na CEP'
 Windows.startApplication(GlobalVariable.cestaCEP)
 
@@ -149,7 +154,6 @@ podpis.podpisSpravu()
 Windows.switchToApplication()
 
 cep.otvorHistoriuZasielok()
-cep.skontrolujPrijatuSpravu('SK599AES', LRN)
 cep.skontrolujPrijatuSpravu('SK556AES', LRN)
 
 Windows.closeApplication()
