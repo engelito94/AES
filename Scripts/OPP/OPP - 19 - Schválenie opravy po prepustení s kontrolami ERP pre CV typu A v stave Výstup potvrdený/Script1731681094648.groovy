@@ -282,17 +282,19 @@ Windows.setText(findWindowsObject('Object Repository/CIS_klient/CU_Podania/Edit_
 Windows.click(findWindowsObject('CIS_klient/CU_vyvozu/VyhladaneCV/PotvrditZrusenieFinal'))
 
 'Podpis SK560AES'
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
-
-podpis.podpisSpravu()
-
-Windows.switchToApplication()
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
-
-log.logInfo('SK560 Podpis OK')
+if (Windows.verifyElementPresent(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'), 15, FailureHandling.OPTIONAL)) {
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
+	
+	podpis.podpisSpravu()
+	
+	Windows.switchToApplication()
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
+	
+	log.logInfo('SK560 Podpis OK')
+}
 
 Windows.delay(30)
 Windows.verifyElementPresent(findWindowsObject('Object Repository/CIS_klient/CU_vystupu/Button__SchvalitOPP'), 30)

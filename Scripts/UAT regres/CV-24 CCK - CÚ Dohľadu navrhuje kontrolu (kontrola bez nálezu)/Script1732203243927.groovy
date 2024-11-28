@@ -201,8 +201,6 @@ Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/Vyhladan
 
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OdoslatVysledokKontroly'))
 
-stavCV = Windows.getText(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/StavCVNaCUVyvozuDohladu'))
-
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vystupu/Button_YES'))
 
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_PotvrditZrusenie')) //potvrdit modal
@@ -216,6 +214,8 @@ Windows.delay(2)
 Windows.click(findWindowsObject('CIS_klient/CU_vyvozu/Button_OtvoritDetail'))
 
 Windows.delay(2)
+
+stavCV = Windows.getText(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/StavCVNaCUVyvozuDohladu'))
 
 if (!(stavCV.equals('Tovar prepustený na vývoz'))) {
 	log.logFailed('Stav CV nie je Tovar prepustený na vývoz. Stav CV je : ' + stavCV)

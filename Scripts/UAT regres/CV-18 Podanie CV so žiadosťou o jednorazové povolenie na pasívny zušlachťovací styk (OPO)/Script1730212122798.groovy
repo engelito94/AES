@@ -92,8 +92,9 @@ Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/Vyhladan
 
 Windows.delay(2)
 
+Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_PotvrditZrusenie')) //potvrdit modal
+
 if (Windows.verifyElementPresent(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_PotvrditZrusenie'),5, FailureHandling.OPTIONAL)) {
-	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_PotvrditZrusenie')) //potvrdit modal
 	Windows.doubleClick(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_PotvrditZrusenie')) //potvrdit modal
 }
 

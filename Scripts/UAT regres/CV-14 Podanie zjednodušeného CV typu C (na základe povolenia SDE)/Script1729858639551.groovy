@@ -79,21 +79,24 @@ String stavCV = Windows.getText(findWindowsObject('Object Repository/CIS_klient/
 
 if (datumPrijatia.isEmpty() || !(stavCV.equals('Prijaté'))) {
     log.logFailed('Operácie v hornej časti záznamu nie sú podľa očakávania')
-	util.markErrorAndStop("Posledný krok zlyhal")
+
+    util.markErrorAndStop('Posledný krok zlyhal')
 }
 
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/ZatvoritBezUlozenia'))
 
-Windows.delay(250)
+Windows.delay(260)
 
 Windows.click(findWindowsObject('CIS_klient/CU_vyvozu/Button_OtvoritDetail'))
 
 String datumPrepustenia = Windows.getText(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/DatumPrepustenia'))
+
 stavCV = Windows.getText(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/StavCVNaCUVyvozuDohladu'))
 
 if (datumPrepustenia.isEmpty() || !(stavCV.equals('Tovar prepustený na vývoz'))) {
-	log.logFailed('Operácie v hornej časti záznamu nie sú podľa očakávania')
-	util.markErrorAndStop("Posledný krok zlyhal")
+    log.logFailed('Operácie v hornej časti záznamu nie sú podľa očakávania')
+
+    util.markErrorAndStop('Posledný krok zlyhal')
 }
 
 'Zavretie CIS'
@@ -105,8 +108,12 @@ Windows.click(findWindowsObject('Object Repository/CIS_klient/ZavrietAplikaciu')
 Windows.startApplication(GlobalVariable.cestaCEP)
 
 cep.prihlasCEP(GlobalVariable.menoCEP, GlobalVariable.hesloCEP)
+
 cep.otvorHistoriuZasielok()
+
 cep.skontrolujPrijatuSpravu('SK528AES', LRN)
+
 cep.skontrolujPrijatuSpravu('SK529AES', LRN)
 
 Windows.closeApplication()
+

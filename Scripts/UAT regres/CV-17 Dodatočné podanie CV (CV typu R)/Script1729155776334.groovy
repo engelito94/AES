@@ -92,47 +92,53 @@ Windows.click(findWindowsObject('CIS_klient/CU_vyvozu/VyhladaneCV/Button_Spracov
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_PrijatTypR'))
 
 'Podpis SK528'
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
-
-podpis.podpisSpravu()
-
-Windows.switchToApplication()
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
-
-log.logInfo('SK528 Podpis OK')
+if (Windows.verifyElementPresent(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'), 10, FailureHandling.OPTIONAL)) {
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
+	
+	podpis.podpisSpravu()
+	
+	Windows.switchToApplication()
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
+	
+	log.logInfo('SK528 Podpis OK')
+}
 
 Windows.delay(2)
 
 'Podpis SK529'
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
-
-podpis.podpisSpravu()
-
-Windows.switchToApplication()
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
-
-log.logInfo('SK529 Podpis OK')
+if (Windows.verifyElementPresent(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'), 10, FailureHandling.OPTIONAL)) {
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
+	
+	podpis.podpisSpravu()
+	
+	Windows.switchToApplication()
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
+	
+	log.logInfo('SK529 Podpis OK')
+}
 
 Windows.delay(2)
 
 'Podpis SK599'
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
-
-podpis.podpisSpravu()
-
-Windows.switchToApplication()
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
-
-log.logInfo('SK599 Podpis OK')
+if (Windows.verifyElementPresent(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'), 10, FailureHandling.OPTIONAL)) {
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
+	
+	podpis.podpisSpravu()
+	
+	Windows.switchToApplication()
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
+	
+	log.logInfo('SK599 Podpis OK')
+}
 
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_PotvrditSpracovanieR'))
 

@@ -167,6 +167,8 @@ Windows.switchToWindowTitle('CIS klient - SK517700 (DTC_TEST)')
 'Kontrola AER'
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/Button_OtvoritDetail'))
 
+Windows.delay(2)
+
 stavAER = Windows.getText(findWindowsObject('CIS_klient/CU_vystupu/Edit_AER_StavCV'))
 
 if (stavAER.equals('Tovar predložený')) {
@@ -204,17 +206,19 @@ Windows.setText(findWindowsObject('Object Repository/CIS_klient/CU_Podania/Edit_
 Windows.click(findWindowsObject('CIS_klient/CU_vyvozu/VyhladaneCV/PotvrditZrusenieFinal'))
 
 'Podpis SK561AES'
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
-
-podpis.podpisSpravu()
-
-Windows.switchToApplication()
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
-
-log.logInfo('SK561 Podpis OK')
+if (Windows.verifyElementPresent(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'), 10, FailureHandling.OPTIONAL)) {
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
+	
+	podpis.podpisSpravu()
+	
+	Windows.switchToApplication()
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
+	
+	log.logInfo('SK561 Podpis OK')
+}
 
 //klik na modal
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_PotvrditZrusenie'))
@@ -226,6 +230,8 @@ Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/Vyhladan
 Windows.delay(1)
 
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/Button_OtvoritDetail'))
+
+Windows.delay(3)
 
 stavAER = Windows.getText(findWindowsObject('CIS_klient/CU_vystupu/Edit_AER_StavCV'))
 
@@ -241,7 +247,7 @@ Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/Vyhladan
 
 Windows.delay(3)
 
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vystupu/Item_VyvoznaOperacia'))
+Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vystupu/Item_VyvoznaOperacia2'))
 
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vystupu/Tlacidlo_KodA2'))
 
@@ -270,20 +276,24 @@ Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vystupu/MenuIte
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vystupu/Button_YES'))
 
 'Podpis SK525AES'
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
-
-podpis.podpisSpravu()
-
-Windows.switchToApplication()
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
-
-log.logInfo('SK525 Podpis OK')
+if (Windows.verifyElementPresent(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'), 10, FailureHandling.OPTIONAL)) {
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
+	
+	podpis.podpisSpravu()
+	
+	Windows.switchToApplication()
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
+	
+	log.logInfo('SK525 Podpis OK')
+}
 
 //klik na modal
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_PotvrditZrusenie'))
+
+Windows.delay(1)
 
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/ZatvoritBezUlozenia'))
 
@@ -320,6 +330,8 @@ Windows.switchToWindowTitle('CIS klient - SK517700 (DTC_TEST)')
 
 'Kontrola AER'
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/Button_OtvoritDetail'))
+
+Windows.delay(3)
 
 stavAER = Windows.getText(findWindowsObject('CIS_klient/CU_vystupu/Edit_AER_StavCV'))
 

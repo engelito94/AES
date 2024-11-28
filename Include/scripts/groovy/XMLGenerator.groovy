@@ -47,48 +47,48 @@ public class XMLGenerator {
 		int nahodneCislo2 = random.nextInt(999999);
 		//retazec obsahuje vzdy "SB24" a "_", zvysok sa generuje - moze sa nahradit/pridat lubovolny retazec
 		String noveLRN = "SB24" + nahodneCislo1 + "_" + nahodneCislo2;
-		
+
 		def projectDir = RunConfiguration.getProjectDir()
 		Path projectPath = Paths.get(projectDir)
 		Path subor = projectPath.resolve('LRN.txt')
-		
+
 		def valueToAppend = noveLRN
-		
+
 		//Kontrola duplicity LRN
 		// Open the file for reading
 		def reader = new FileReader(subor.toString())
-		
+
 		try {
-		  // Read the entire content of the file into a string
-		  def textFileContent = reader.text
-		
-		  // Check if the base value "LRN" exists
-		  def valueFound = textFileContent.contains(valueToAppend)
-		  while (valueFound) {
-			  nahodneCislo1 = random.nextInt(9999);
-			  nahodneCislo2 = random.nextInt(999999);
-			  noveLRN = "SB24" + nahodneCislo1 + "_" + nahodneCislo2;
-			  valueToAppend = noveLRN
-			  valueFound = textFileContent.contains(valueToAppend)
-		  }
-		  // Close the reader before opening for writing
+			// Read the entire content of the file into a string
+			def textFileContent = reader.text
+
+			// Check if the base value "LRN" exists
+			def valueFound = textFileContent.contains(valueToAppend)
+			while (valueFound) {
+				nahodneCislo1 = random.nextInt(9999);
+				nahodneCislo2 = random.nextInt(999999);
+				noveLRN = "SB24" + nahodneCislo1 + "_" + nahodneCislo2;
+				valueToAppend = noveLRN
+				valueFound = textFileContent.contains(valueToAppend)
+			}
+			// Close the reader before opening for writing
 		} finally {
-		  reader.close()
+			reader.close()
 		}
 
 		//String filePathDialog = filePath.replaceAll('/', '\\\\')
 		// Open the file for appending
 		def writer = new FileWriter(subor.toString(), true)
-		
+
 		try {
-		  // Append the value to the file
-		  writer.write(noveLRN + System.getProperty('line.separator'))
+			// Append the value to the file
+			writer.write(noveLRN + System.getProperty('line.separator'))
 		} finally {
-		  writer.close()
+			writer.close()
 		}
-		
+
 		log.logInfoCenter(noveLRN)
-		
+
 		return noveLRN;
 	}
 
@@ -96,10 +96,10 @@ public class XMLGenerator {
 	def replaceValues(String filePath, String LRN, String MRN, String EC) {
 		Date date = new Date()
 		String datePart = date.format("yyyy-MM-dd")
-		
+
 		def file = new File(filePath)
 		def fileText = file.text
-		
+
 		def pattern = /<LRN>(.*?)<\/LRN>/
 		def newContent = fileText.replaceAll(pattern, "<LRN>"+LRN+"</LRN>")
 		pattern = /<MRN>(.*?)<\/MRN>/
@@ -159,7 +159,7 @@ public class XMLGenerator {
 
 		def pattern = /<manifestNumber>(.*?)<\/manifestNumber>/
 		def newContent = fileText.replaceAll(pattern, "<manifestNumber>"+number+"</manifestNumber>")
-		
+
 		file.write(newContent)
 	}
 
@@ -173,71 +173,71 @@ public class XMLGenerator {
 		def valueOfPattern = fileText.substring(i1+"<manifestNumber>".length(), i2)
 		return valueOfPattern
 	}
-	
+
 	def updateY(String filePath) {
 		def xmlFile = new File(filePath)
 		def xmlFileText = xmlFile.text
 		def xml = new XmlParser().parse(xmlFile)
-		
+
 		def mrn1 = xml.GoodsShipment.GoodsItem[0].GoodsItemPreviousDocument[0].referenceNumber.text()
 		def mrn2 = xml.GoodsShipment.GoodsItem[1].GoodsItemPreviousDocument[0].referenceNumber.text()
 		def mrn3 = xml.GoodsShipment.GoodsItem[2].GoodsItemPreviousDocument[0].referenceNumber.text()
-		
+
 		//nahradi najdene MRN v xml, MRN v subore C a F
 		String mrnF = deleteLastLine("MRNF")
 		def content = xmlFileText.replaceAll(mrn1, deleteLastLine("MRNC"))
 		content = content.replaceAll(mrn2, mrnF)
 		content = content.replaceAll(mrn3, mrnF)
-		
+
 		xmlFile.write(content)
 	}
-	
+
 	def writeMRN(String nazovSuboru, String MRN) {
 		def projectDir = RunConfiguration.getProjectDir()
 		Path projectPath = Paths.get(projectDir)
 		Path nazovMRN = projectPath.resolve(nazovSuboru + '.txt')
-		
+
 		//String filePathDialog = filePath.replaceAll('/', '\\\\')
 		// Open the file for appending
 		def writer = new FileWriter(nazovMRN.toString(), true)
-		
+
 		try {
-		  // Append the value to the file
-		  writer.write(MRN + System.getProperty('line.separator'))
+			// Append the value to the file
+			writer.write(MRN + System.getProperty('line.separator'))
 		} finally {
-		  writer.close()
+			writer.close()
 		}
 	}
-	
+
 	def deleteLastLine(String fileName) {
 		String lastLine
 		// Define the file path
 		def projectDir = RunConfiguration.getProjectDir()
 		Path projectPath = Paths.get(projectDir)
 		Path nazovMRN = projectPath.resolve(fileName + '.txt')
-		
+
 		// Read all lines into a list
 		List<String> lines
-		
+
 		try {
-		  // Read lines using readLines() for better performance
-		  lines = Files.readAllLines(new File(nazovMRN.toString()).toPath())
+			// Read lines using readLines() for better performance
+			lines = Files.readAllLines(new File(nazovMRN.toString()).toPath())
 		} catch (IOException e) {
-		  // Handle potential I/O exceptions (optional)
-		  e.printStackTrace()
-		  lines = []
+			// Handle potential I/O exceptions (optional)
+			e.printStackTrace()
+			lines = []
 		}
-		
+
 		if (lines.size() > 0) {
-		  // Store the last line in a variable
-		  lastLine = lines.remove(lines.size() - 1) // Removes and returns the last line
-		
-		  // Write the remaining lines back to the file using writeAllLines()
-		  Files.write(new File(nazovMRN.toString()).toPath(), lines, StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING)
+			// Store the last line in a variable
+			lastLine = lines.remove(lines.size() - 1) // Removes and returns the last line
+
+			// Write the remaining lines back to the file using writeAllLines()
+			Files.write(new File(nazovMRN.toString()).toPath(), lines, StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING)
 		} else {
-		  println("File " + nazovMRN.toString() + " is empty");
+			println("File " + nazovMRN.toString() + " is empty");
 		}
-		
+
 		return lastLine
 	}
 }
