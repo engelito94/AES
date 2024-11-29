@@ -97,17 +97,19 @@ Windows.doubleClick(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/Vy
     )
 
 'Podpis SK528'
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
-
-podpis.podpisSpravu()
-
-Windows.switchToApplication()
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
-
-Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
-
-log.logInfo('SK528 Podpis OK')
+if (Windows.verifyElementPresent(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'), 0, FailureHandling.OPTIONAL)) {
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitPodpisovanie'))
+	
+	podpis.podpisSpravu()
+	
+	Windows.switchToApplication()
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_SpustitOverenie'))
+	
+	Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_OKPodpisovanie'))
+	
+	log.logInfo('SK528 Podpis OK')
+}
 
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/Button_PotvrditZrusenie') //potvrdenie podpisu SK528
     )
@@ -137,7 +139,7 @@ stavCV = Windows.getText(findWindowsObject('Object Repository/CIS_klient/CU_vyvo
 String datumPrepustenia = Windows.getText(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/DatumPrepustenia'))
 
 if (datumPrepustenia.isEmpty() || !(stavCV.equals('Tovar prepustený na vývoz'))) {
-    log.logFailed('Operácie v hornej časti záznamu nie sú podľa očakávania')
+    log.logFailed('Operácie v hornej časti záznamu nie sú podľa očakávania.' + ' Stav CV : ' + stavCV)
 
     util.markErrorAndStop('Posledny krok zlyhal')
 }

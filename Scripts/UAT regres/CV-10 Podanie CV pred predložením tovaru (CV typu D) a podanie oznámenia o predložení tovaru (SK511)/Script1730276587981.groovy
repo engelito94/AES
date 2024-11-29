@@ -122,7 +122,7 @@ if (!(stavCV.equals('Prijaté'))) {
 
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/ZatvoritBezUlozenia'))
 
-Windows.delay(270)
+Windows.delay(280)
 
 Windows.click(findWindowsObject('CIS_klient/CU_vyvozu/Button_OtvoritDetail'))
 

@@ -213,6 +213,12 @@ public class CEPovac {
 					util.markPassed("SK560 nájdená")
 				}
 				break;
+			case "SK548AES":
+				if (sprava.equals("SK548AES.001 - Schválenie/zamietnutie manifestu")) {
+					log.logPassed("SK548 nájdená")
+					util.markPassed("SK548 nájdená")
+				}
+				break;
 			default:
 				log.logFailed("Neočakávaná správa")
 				util.markFailedAndStop("Neočakávaná správa")

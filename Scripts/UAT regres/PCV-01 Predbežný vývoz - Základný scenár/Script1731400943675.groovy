@@ -111,6 +111,8 @@ Windows.closeApplication()
 'Prepnutie na CIS'
 Windows.switchToWindowTitle('CIS klient - SK607600 (DTC_TEST)')
 
+Windows.delay(25)
+
 Windows.click(findWindowsObject('CIS_klient/CU_vyvozu/Button_OtvoritDetail'))
 
 Windows.delay(5)

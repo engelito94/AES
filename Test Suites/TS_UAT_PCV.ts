@@ -21,7 +21,7 @@
    <testCaseLink>
       <guid>9b8d1b3a-97e4-4ed6-b126-babf11d8bd73</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/UAT regres/PCV-02 PCV podané na inom colnom úrade, kontrola na CÚ Výstupu s povolením na výstup</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -42,14 +42,14 @@
    <testCaseLink>
       <guid>a879215e-5c0b-46da-b9fb-f2c86b886aa6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/UAT regres/PCV-05 Výstup po prijatí viacerých manifestov</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>402d1048-57be-4db9-a7cb-6339d24ba561</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/UAT regres/PCV-06 Presmerovanie akceptované</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

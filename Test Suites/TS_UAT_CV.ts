@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>417636c1-ccb1-4e71-b12e-73711a993809</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/UAT regres/CV-01 Vývoz - Základný scenár</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -49,7 +49,7 @@
    <testCaseLink>
       <guid>4e6ad968-9526-4608-9d54-36d6f54ee007</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/UAT regres/CV-03 Zrušenie zjednodušeného CV deklarantom po prepustení (typ B)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -77,7 +77,7 @@
    <testCaseLink>
       <guid>15b3ec77-6986-420c-b43e-b95d4bfaf15a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/UAT regres/CV-11 Podanie CV pred predložením tovaru (CV typu D) a žiadosť o opravu (SK513) pred podaním oznámenia o predložení tovaru (SK511)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -105,14 +105,14 @@
    <testCaseLink>
       <guid>75244c40-8cbd-4595-a0b7-1825a13a10e8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/UAT regres/CV-17 Dodatočné podanie CV (CV typu R)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>d53767ab-742d-4266-9325-4fd38a84f1bb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/UAT regres/CV-18 Podanie CV so žiadosťou o jednorazové povolenie na pasívny zušlachťovací styk (OPO)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -121,6 +121,20 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/UAT regres/CV-19 Neprijatie žiadosti o opravu CV podanú pred prepustením</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2de5bfee-fcec-43a6-905a-6f3e87873f6c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/UAT regres/CV-02 CCK - CÚ Dohľadu navrhuje prepustenie (bez kontrol), výstup po colnom sklade</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ad99321f-c17d-4e42-a80a-ba4eb9df0ac4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/UAT regres/CV-24 CCK - CÚ Dohľadu navrhuje kontrolu (kontrola bez nálezu)</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

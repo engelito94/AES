@@ -81,6 +81,7 @@ String MRN = Windows.getText(findWindowsObject('Object Repository/CIS_klient/CU_
 
 if (!(stavCV.equals('Registrované'))) {
     log.logFailed('Operácie v hornej časti záznamu nie sú podľa očakávania')
+
     util.markErrorAndStop('Operácie v hornej časti záznamu nie sú podľa očakávania')
 }
 
@@ -97,7 +98,9 @@ filePathDialog = filePath.replaceAll('/', '\\\\')
 xml.replaceValues(filePath, LRN, MRN, EC)
 
 cep.prihlasCEP(GlobalVariable.menoCEP, GlobalVariable.hesloCEP)
+
 cep.vyberXMLDialog(filePathDialog)
+
 cep.vyplnSKSpravu(LRN, 'SK513AES')
 
 podpis.podpisSpravu()
@@ -119,7 +122,9 @@ filePathDialog = filePath.replaceAll('/', '\\\\')
 xml.replaceValues(filePath, LRN, MRN, EC)
 
 cep.prihlasCEP(GlobalVariable.menoCEP, GlobalVariable.hesloCEP)
+
 cep.vyberXMLDialog(filePathDialog)
+
 cep.vyplnSKSpravu(LRN, 'SK511AES')
 
 podpis.podpisSpravu()
@@ -138,13 +143,14 @@ Windows.delay(5)
 stavCV = Windows.getText(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/StavCVNaCUVyvozuDohladu'))
 
 if (!(stavCV.equals('Prijaté'))) {
-	log.logFailed('Operácie v hornej časti záznamu nie sú podľa očakávania')
-	util.markErrorAndStop('Operácie v hornej časti záznamu nie sú podľa očakávania')
+    log.logFailed('Operácie v hornej časti záznamu nie sú podľa očakávania')
+
+    util.markErrorAndStop('Operácie v hornej časti záznamu nie sú podľa očakávania')
 }
 
 Windows.click(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/ZatvoritBezUlozenia'))
 
-Windows.delay(270)
+Windows.delay(280)
 
 Windows.click(findWindowsObject('CIS_klient/CU_vyvozu/Button_OtvoritDetail'))
 
@@ -153,8 +159,9 @@ Windows.delay(5)
 stavCV = Windows.getText(findWindowsObject('Object Repository/CIS_klient/CU_vyvozu/VyhladaneCV/StavCVNaCUVyvozuDohladu'))
 
 if (!(stavCV.equals('Tovar prepustený na vývoz'))) {
-	log.logFailed('Operácie v hornej časti záznamu nie sú podľa očakávania')
-	util.markErrorAndStop('Operácie v hornej časti záznamu nie sú podľa očakávania')
+    log.logFailed('Operácie v hornej časti záznamu nie sú podľa očakávania')
+
+    util.markErrorAndStop('Operácie v hornej časti záznamu nie sú podľa očakávania')
 }
 
 'Zavretie CIS'
@@ -166,10 +173,16 @@ Windows.click(findWindowsObject('Object Repository/CIS_klient/ZavrietAplikaciu')
 Windows.startApplication(GlobalVariable.cestaCEP)
 
 cep.prihlasCEP(GlobalVariable.menoCEP, GlobalVariable.hesloCEP)
+
 cep.otvorHistoriuZasielok()
+
 cep.skontrolujPrijatuSpravu('SK504AES', LRN)
+
 cep.skontrolujPrijatuSpravu('SK516AES', LRN)
+
 cep.skontrolujPrijatuSpravu('SK528AES', LRN)
+
 cep.skontrolujPrijatuSpravu('SK529AES', LRN)
 
 Windows.closeApplication()
+
