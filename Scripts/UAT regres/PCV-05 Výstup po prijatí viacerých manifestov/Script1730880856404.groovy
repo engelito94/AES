@@ -229,7 +229,7 @@ Windows.delay(5)
 
 stavPCV = Windows.getText(findWindowsObject('Object Repository/CIS_klient/CU_Podania/stavPCV'))
 
-if (stavPCV.equals('Tovar čiastočne vyvezený')) {
+if (stavPCV.equals('Tovar čiastočné vyvezený')) {
 	log.logPassed('Stav vyhovuje ' + stavPCV)
 } else {
 	util.markErrorAndStop('Stav nevyhovuje')

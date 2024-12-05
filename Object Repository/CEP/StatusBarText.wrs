@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<WindowsElementEntity>
-   <description></description>
-   <name>StatusBarText</name>
-   <tag></tag>
-   <locator>//Window/Pane[1]/Text[1]</locator>
-   <locatorStrategy>XPATH</locatorStrategy>
-</WindowsElementEntity>

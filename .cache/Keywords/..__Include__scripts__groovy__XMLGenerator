@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "7807041D7BDD79DD6111D188797D89E3",
+  "keywordFileContentHash": "DF9679F2EFC1E8A31792128A343D3AD9",
   "keywordClasses": [
     {
       "name": "XMLGenerator",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }
