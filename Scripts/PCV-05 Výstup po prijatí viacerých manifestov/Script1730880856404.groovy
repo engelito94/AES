@@ -40,9 +40,9 @@ String filePathDialog = filePath.replaceAll('/', '\\\\')
 xml.replaceLrnValue(filePath, LRN)
 
 'CEP - SK615'
-Windows.startApplication(GlobalVariable.cestaCEP)
+Windows.startApplication('C:\\Program Files (x86)\\Ditec\\Ditec.Cep.Ekr.Interface\\Cep.Ekr.App.exe')
 
-cep.prihlasCEP(GlobalVariable.menoCEP, GlobalVariable.hesloCEP)
+cep.prihlasCEP('barcikLP', 'FEsOd8O35eSoR2c+MauzCg==')
 cep.vyberXMLDialog(filePathDialog)
 cep.vyplnSKSpravu(LRN, 'SK615EXS')
 
@@ -56,9 +56,9 @@ cep.skontrolujPrijatuSpravu('SK628EXS', LRN)
 Windows.closeApplication()
 
 'Prepnutie na CIS'
-Windows.startApplication(GlobalVariable.cestaCIS)
+Windows.startApplication('C:\\Users\\barcik\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\CIS klient(DTC_TEST).lnk')
 
-cis.prihlasCisKlient(GlobalVariable.menoCIS, GlobalVariable.hesloCIS, 'SK606900')
+cis.prihlasCisKlient('barcik', 'MswRUieWN0roLhNOfsIdHQ==', 'SK606900')
 
 Windows.switchToWindowTitle('CIS klient - SK606900 (DTC_TEST)')
 
@@ -109,9 +109,9 @@ filePathDialog = filePath.replaceAll('/', '\\\\')
 
 xml.replaceMRNDateTimeValues(filePath, MRN)
 
-Windows.startApplication(GlobalVariable.cestaCEP)
+Windows.startApplication('C:\\Program Files (x86)\\Ditec\\Ditec.Cep.Ekr.Interface\\Cep.Ekr.App.exe')
 
-cep.prihlasCEP(GlobalVariable.menoCEP, GlobalVariable.hesloCEP)
+cep.prihlasCEP('barcikLP', 'FEsOd8O35eSoR2c+MauzCg==')
 cep.vyberXMLDialog(filePathDialog)
 cep.vyplnSKSpravu(LRN, 'SK547EXS')
 
@@ -174,9 +174,9 @@ filePathDialog = filePath.replaceAll('/', '\\\\')
 xml.replaceMRNDateTimeValues(filePath, MRN)
 xml.replaceManifestNumber(filePath, manifestNUmber)
 
-Windows.startApplication(GlobalVariable.cestaCEP)
+Windows.startApplication('C:\\Program Files (x86)\\Ditec\\Ditec.Cep.Ekr.Interface\\Cep.Ekr.App.exe')
 
-cep.prihlasCEP(GlobalVariable.menoCEP, GlobalVariable.hesloCEP)
+cep.prihlasCEP('barcikLP', 'FEsOd8O35eSoR2c+MauzCg==')
 cep.vyberXMLDialog(filePathDialog)
 cep.vyplnSKSpravu(LRN, 'SK590EXS')
 
@@ -209,9 +209,9 @@ cep.skontrolujPrijatuSpravu('SK548EXS', LRN)
 Windows.closeApplication()
 
 'Prepnutie na CIS'
-Windows.startApplication(GlobalVariable.cestaCIS)
+Windows.startApplication('C:\\Users\\barcik\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\CIS klient(DTC_TEST).lnk')
 
-cis.prihlasCisKlient(GlobalVariable.menoCIS, GlobalVariable.hesloCIS, 'SK606900')
+cis.prihlasCisKlient('barcik', 'MswRUieWN0roLhNOfsIdHQ==', 'SK606900')
 
 Windows.switchToWindowTitle('CIS klient - SK606900 (DTC_TEST)')
 
@@ -229,7 +229,7 @@ Windows.delay(5)
 
 stavPCV = Windows.getText(findWindowsObject('Object Repository/CIS_klient/CU_Podania/stavPCV'))
 
-if (stavPCV.equals('Tovar čiastočne vyvezený')) {
+if (stavPCV.equals('Tovar čiastočné vyvezený')) {
 	log.logPassed('Stav vyhovuje ' + stavPCV)
 } else {
 	util.markErrorAndStop('Stav nevyhovuje')

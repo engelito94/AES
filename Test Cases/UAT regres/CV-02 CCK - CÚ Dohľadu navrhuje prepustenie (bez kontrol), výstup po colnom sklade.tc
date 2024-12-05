@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>CV-02 CCK - CÚ Dohľadu navrhuje prepustenie (bez kontrol), výstup po colnom sklade</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>87c41b52-58a0-414d-9d96-16f70c684ecb</testCaseGuid>
+</TestCaseEntity>
